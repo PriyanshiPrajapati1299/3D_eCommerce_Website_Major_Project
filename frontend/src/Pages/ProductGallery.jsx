@@ -4,6 +4,7 @@ import banner2 from '../Images/banner-2.png';
 import { FcFlashOn } from "react-icons/fc";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { LuIndianRupee } from "react-icons/lu";
+import { BsFillCartPlusFill } from "react-icons/bs";
 
 const products = [
   {
@@ -176,7 +177,7 @@ const ProductGallery = () => {
             
             <div className="flex justify-between gap-20">
               <button className="mt-4 px-4 py-2 font-bold bg-gray-100 text-red-500 rounded-lg hover:bg-gray-200">
-             Buy
+             <BsFillCartPlusFill className="text-xl"/>
             </button>
               <button className="mt-4 px-4 py-2 font-bold bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200">
              View
