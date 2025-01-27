@@ -74,11 +74,11 @@ const Navbar = () => {
             )}
           </div>
           <div className="relative">
-            <FiHeart className="text-2xl" />
+            <Link to='/user-wishlist'><FiHeart className="text-2xl" /></Link>
             <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">0</span>
           </div>
           <div className="relative">
-            <FiShoppingBag className="text-2xl" />
+            <Link to='/user-cart'><FiShoppingBag className="text-2xl" /></Link>
             <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">0</span>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
       {/* Navigation Links */}
       <nav className="bg-gray-100 py-2">
         <div className="container mx-auto px-28 flex justify-between text-sm font-medium">
-          <a href="#" className="hover:text-gray-700">About Us</a>
+          <a href="/about-us" className="hover:text-gray-700">About Us</a>
           <a href="#" className="hover:text-gray-700">Products</a>
           <a href="#" className="hover:text-gray-700">Men's</a>
           <a href="#" className="hover:text-gray-700">Women's</a>
