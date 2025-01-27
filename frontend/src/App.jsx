@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignupForm from './Pages/Signup'
 import SellerSignup from './Pages/Seller_Signup'
 import SellerLogin from './Pages/Seller_Login'
+import Cart from './Pages/Cart'
+import Wishlist from './Pages/Wishlist'
+import About from './Pages/About'
 // import AboutUs from './Pages/About_us'
 
 function App() {
@@ -22,7 +25,10 @@ function App() {
         <Route path='/signup' element={<SignupForm/>} />
         <Route path='/seller-signup' element={<SellerSignup/>}/>
         <Route path='/seller-login' element={<SellerLogin/>}/>
-        {/* <Route path='/about-us' element={<AboutUs/>}/> */}
+        <Route path='/user-cart' element={<Cart/>}/>
+        <Route path='/user-wishlist' element={<Wishlist/>}/>
+        <Route path='/about-us' element={<About/>}/>
+        
       </Routes>
     </Router>
   )
